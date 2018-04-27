@@ -21,17 +21,25 @@
 				</tr>
 				<c:forEach var="product" items="${products}" >
 				<tr>
-				    <td><img alt="pic" src="<c:url value="/resources/images/${product.productId}.png"/>" 
-				             style="width:80px; height:120px" class="img img-rounded"></td>
+				    <td><img alt="Image" src="<c:url value="/resources/images/${product.productId}.png"/>" 
+				    style="width:80px; height:120px" class="img img-rounded"></td>
 					<td>${product.productName}</td>
 					<td>${product.productDes}</td>
 					<td>${product.productPrice}</td>
 					<td>${product.productUnits}</td>
 					<td><a href= "<spring:url value="/productList/viewProduct/${product.productId}" />" >
-					<span class="font-icon-zoom-in" /></a></td>
+						<span class="font-icon-zoom-in" /></a>
+						<a href= "<spring:url value="/admin/productInventory/deleteProduct/${product.productId}" />" >
+						<span class="font-icon-remove" /></a>
+						<a href= "<spring:url value="/admin/productInventory/editProduct/${product.productId}" />" >
+						<span class="font-icon-edit" /></a>
+					</td>
 				</tr>
 				</c:forEach>
 			</table>
+			
+			<a href= "<spring:url value="/admin/productInventory/addProduct"/>" class="btn btn-primary">Add Product</a>
+			
 			</div>
 		</div>
     </div>

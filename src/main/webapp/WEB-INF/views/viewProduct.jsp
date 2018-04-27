@@ -14,7 +14,8 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-5">
-						<img alt="image" src="#" style="width:100%; height:300px">
+						<img alt="image" src="<c:url value="/resources/images/${product.productId}.png"/>" 
+						     style="width:30%; height:30%" class="img img-rounded">
 					</div>
 					<div class="col-md-5">
 						<h2>Product Name: ${product.productName}</h2>

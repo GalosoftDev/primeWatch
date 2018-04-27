@@ -1380,3 +1380,18 @@ footer .credits {
        -o-transition: none;
           transition: none;
 }
+
+
+/* mis estilos */
+.table th {
+	text-align:center;
+}
+
+.table td {
+	vertical-align:middle;
+	text-align:center;
+}
+
+
+
+

@@ -70,7 +70,7 @@
     	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
         
         <div id="logo">
-        	<a id="goUp" href="#home-slider" title="Brushed | Responsive One Page Template">Brushed Template</a>
+        	<a id="goUp" href="<c:url value="/admin"/>" title="Brushed | Responsive One Page Template">Brushed Template</a>
         </div>
         
         <nav id="menu">
@@ -79,6 +79,7 @@
                 <li><a href="#work">Productos</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href= "<c:url value="/admin"/>" >Admin</a></li>
             </ul>
         </nav>
         
