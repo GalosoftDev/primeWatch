@@ -50,6 +50,8 @@
 <script src="${pageContext.request.contextPath}/resources/js/jquery.tweet.js"></script> <!-- Tweet -->
 <script src="${pageContext.request.contextPath}/resources/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
 <script src="${pageContext.request.contextPath}/resources/js/main1.js"></script> <!-- Default JS -->
+<script src="${pageContext.request.contextPath}/resources/js/angular.1.0.2.js"></script> <!-- Default JS -->
+<script src="${pageContext.request.contextPath}/resources/js/controller.js"></script> <!-- Default JS -->
 <!-- End Js -->
 
 </body>

@@ -16,13 +16,13 @@
 				            method="post" commandName="product" enctype="multipart/form-data">
 					<div class="form-group">
 						<label for="name">Name</label>
-						<form:errors path="productName"/>
+						<form:errors path="productName" cssStyle="color:#03a9f4"/>
 						<form:input path="productName" id="name" class="form-control"/>
 					</div>
 					
 					<div class="form-group">
 						<label for="description">Description</label>
-						<form:errors path="productDes"/>
+						<form:errors path="productDes" cssStyle="color:#03a9f4"/>
 						<form:textarea path="productDes" id="description" class="form-control"/>
 					</div>
 					
