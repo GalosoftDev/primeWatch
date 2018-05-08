@@ -19,7 +19,7 @@
 					<th>ProductUnits</th>
 					<th></th>
 				</tr>
-				<c:forEach var="product" items="${products}" >
+				<c:forEach var="product" items="${product}" >
 				<tr>
 				    <td><img alt="pic" src="<c:url value="/resources/images/${product.productId}.png"/>" 
 				             style="width:80px; height:120px" class="img img-rounded"></td>
@@ -27,7 +27,7 @@
 					<td>${product.productDes}</td>
 					<td>${product.productPrice}</td>
 					<td>${product.productUnits}</td>
-					<td><a href= "<spring:url value="/productList/viewProduct/${product.productId}" />" >
+					<td><a href= "<spring:url value="/product/viewProduct/${product.productId}" />" >
 					<span class="font-icon-zoom-in" /></a></td>
 				</tr>
 				</c:forEach>

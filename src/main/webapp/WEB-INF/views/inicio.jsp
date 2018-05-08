@@ -13,7 +13,8 @@
             <div class="span12">
                 <div class="title-page">
                     <h2 class="title">Nuestros Productos</h2>
-                    <h3 class="title-description">Conoce todos nuesros increibles productos <a href= "<c:url value="/productList"/>"  >(Ver todos)</a>.</h3>
+                    <h3 class="title-description">Conoce todos nuesros increibles productos 
+                    <a href= "<c:url value="/product/productList"/>"  >(Ver todos)</a>.</h3>
                 </div>
             </div>
         </div>

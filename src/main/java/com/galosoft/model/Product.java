@@ -1,16 +1,26 @@
 package com.galosoft.model;
 
+import java.io.Serializable;
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Transient;
 
 import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
-public class Product {
+public class Product implements Serializable{
+	
+	private static final long serialVersionUID = 1949095811669058662L;
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -25,6 +35,9 @@ public class Product {
 	private int productUnits;
 	@Transient
 	private MultipartFile productImage;
+	@OneToMany(mappedBy = "product", cascade=CascadeType.ALL, fetch = FetchType.EAGER)
+	@JsonIgnore
+	private List<CartItem> cartItemList;
 	
 	public int getProductId() {
 		return productId;
@@ -74,7 +87,10 @@ public class Product {
 	public void setProductImage(MultipartFile productImage) {
 		this.productImage = productImage;
 	}
-	
-	
-
+	public List<CartItem> getCartItemList() {
+		return cartItemList;
+	}
+	public void setCartItemList(List<CartItem> cartItemList) {
+		this.cartItemList = cartItemList;
+	}
 }

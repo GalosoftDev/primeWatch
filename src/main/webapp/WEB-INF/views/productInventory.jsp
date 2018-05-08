@@ -27,18 +27,18 @@
 					<td>${product.productDes}</td>
 					<td>${product.productPrice}</td>
 					<td>${product.productUnits}</td>
-					<td><a href= "<spring:url value="/productList/viewProduct/${product.productId}" />" >
+					<td><a href= "<spring:url value="/product/viewProduct/${product.productId}" />" >
 						<span class="font-icon-zoom-in" /></a>
-						<a href= "<spring:url value="/admin/productInventory/deleteProduct/${product.productId}" />" >
+						<a href= "<spring:url value="/admin/product/deleteProduct/${product.productId}" />" >
 						<span class="font-icon-remove" /></a>
-						<a href= "<spring:url value="/admin/productInventory/editProduct/${product.productId}" />" >
+						<a href= "<spring:url value="/admin/product/editProduct/${product.productId}" />" >
 						<span class="font-icon-edit" /></a>
 					</td>
 				</tr>
 				</c:forEach>
 			</table>
 			
-			<a href= "<spring:url value="/admin/productInventory/addProduct"/>" class="btn btn-primary">Add Product</a>
+			<a href= "<spring:url value="/admin/product/addProduct"/>" class="btn btn-primary">Add Product</a>
 			
 			</div>
 		</div>

@@ -5,9 +5,9 @@ import java.util.List;
 import com.galosoft.model.Product;
 
 public interface ProductDao {
-	void addProduct(Product product);
+	List<Product> getProductList();
 	Product getProductById(int id);
-	List<Product> getAllProducts();
-	void deleteProduct(int id);
+	void addProduct(Product product);
 	void editProduct(Product product);
+	void deleteProduct(Product product);
 }
